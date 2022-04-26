@@ -227,10 +227,10 @@ extension Pager {
                     .onAnimationCompleted(for: CGFloat(pagerModel.index), completion: {
                         // #194 AnimatableModifier symbol not found in iOS 13.0 and iOS 13.1
 
-                        if pagerModel.pageIncrement != 0 {
-                            pagerModel.pageIncrement = 0
+//                        if pagerModel.pageIncrement != 0 {
+//                            pagerModel.pageIncrement = 0
                             onPageChanged?(pagerModel.index)
-                        }
+//                        }
                     })
                     .eraseToAny()
             }
