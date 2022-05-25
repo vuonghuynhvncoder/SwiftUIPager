@@ -206,13 +206,11 @@ extension Pager {
             #else
             let wrappedView = stack
               .focusable()
-              .onMoveCommand(perform: self.onMoveCommandSent)
             #endif
           
             #if os(macOS)
             wrappedView = wrappedView
               .focusable()
-              .onMoveCommand(perform: self.onMoveCommandSent)
               .eraseToAny()
             #endif
 
